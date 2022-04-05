@@ -1,0 +1,24 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /auth
+
+spring:
+  datasource:
+    url: jdbc:mysql://121.5.243.23:1191/test?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: root@xing.12&89
+    hikari:
+      data-source-properties:
+        useSSL: false
+        serverTimezone: GMT+8
+        useUnicode: true
+        characterEncoding: utf8
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    org.springframework.security: debug
